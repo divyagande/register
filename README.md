@@ -7,3 +7,4 @@ divya
 friend
 tom
 mom
+i am an intern

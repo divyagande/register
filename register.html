@@ -4,41 +4,73 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <script src="js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/register.css">
-    </head>
+        <script>
+            function submit(){
+          let x,y;
+          x=document.getElementById("fname").value;
+          y=document.getElementById("lname").value;
+         let z=x+y;
+          document.getElementById("myname").innerHTML=z;
+         let mail=document.getElementById("email").value;
+         document.getElementById("myemail").innerHTML=mail; 
+         let user=document.getElementById("username").value;
+         document.getElementById("myusername").innerHTML=user;
+         let num=document.getElementById("mbno").value;
+         document.getElementById("mymbno").innerHTML=num;
+ let ad=document.getElementById("add").value;
+         document.getElementById("myadd").innerHTML=ad;
+         let aadhar=document.getElementById("aadharno").value;
+         document.getElementById("myaadhar").innerHTML=aadhar;
+ let panno=document.getElementById("pan").value;
+         document.getElementById("mypan").innerHTML=panno;
+ let city=document.getElementById("city").value;
+         document.getElementById("mycity").innerHTML=city;
+ let st=document.getElementById("state").value;
+         document.getElementById("mystate").innerHTML=st;
+         let dob=document.getElementById("dob").value;
+         document.getElementById("mydob").innerHTML=dob;
+
+         let pro=document.getElementById("red").value;
+         document.getElementById("myprofile").innerHTML=pro;
+         
+        }
+
+        </script>
+        </head>
      <body id="deep">
         <div class="container">
             <h1 id="div"> REGISTRATION FORM </h1>
             <br>
             <div class="row">
-                <div class="col">  First Name <br> <input type="text" placeholder=""> </div>
-                 <div class="col"> Last Name <br> <input type="text" placeholder=""> </div>     
+                <div class="col" >  First Name <br> <input id="fname"type="text" placeholder=""> </div>
+                 <div class="col"> Last Name <br> <input id="lname" type="text" placeholder=""> </div>     
         </div>
         <br>
         <div class="row">
-            <div class="col"> MAIL.ID <br> <input type="text" placeholder=""> </div>
-            <div class="col"> UserName <br> <input type="text" placeholder=""> </div>
+            <div class="col"> MAIL.ID <br> <input id="email" type="text" placeholder=""> </div>
+            <div class="col"> UserName <br> <input type="text" id="username" placeholder=""> </div>
         </div>
         <br>
         <div class="row">
-            <div class="col"> Mob.No <br> <input type="text" placeholder=""> </div>
-            <div class="col"> <Address> Address <br> <input type="text" placeholder=""> </Address> </div>
+            <div class="col"> Mob.No <br> <input type="text" id="mbno"  placeholder=""> </div>
+            <div class="col"> <Address> Address <br> <input type="text" id="add" placeholder=""> </Address> </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col"> Password <br> <input type="text" placeholder=""> </div>
+        <div class="row">password <br> <input type="text" placeholder=""> </div>
             <div class="col"> password(confirm) <br> <input type="text" placeholder=""> </div>
         </div>
+            <div class="col"> 
         <br>
         <div class="row">
-            <div class="col"> Aadhar.No <br> <input type="text" placeholder=""> </div>
-            <div class="col"> Pan.No  <br> <input type="text" placeholder=""> </div>
+            <div class="col"> Aadhar.No <br> <input type="text" id="aadharno"  placeholder=""> </div>
+            <div class="col"> Pan.No  <br> <input type="text" id="pan"  placeholder=""> </div>
         </div>
         <br>
         <div class="row g-1">
             <div class="col-sm-7">
                 <div class="row">
                     <div class="col"> City </div>
-              <input type="text" class="form-control" placeholder="City" aria-label="City">
+              <input type="text" class="form-control"id="city" placeholder="City" aria-label="City">
             </div>
         </div>
         </div>
@@ -48,7 +80,7 @@
                 <div class="row">
                     <div class="col"> State </div>
                        <br>
-                        <input type="text" class="form-control" placeholder="State" aria-label="State">
+                        <input type="text" class="form-control" id="state" placeholder="State" aria-label="State">
                       </div>
                     </div>
                 </div>
@@ -58,7 +90,7 @@
                         <div class="row">
                             <div class="col"> DOB </div>
                                <br>
-                                <input type="text" class="form-control" placeholder="dd/mm/yyyy" aria-label="State">
+                                <input type="text" class="form-control"id="dob" placeholder="dd/mm/yyyy" aria-label="State">
                               </div>
                             </div>
                         </div>
@@ -138,12 +170,30 @@
       <br>
       <br>
 
-      <center><input type="submit" class="btn btn-primary"></center>
+      <center><button type="button" class="btn btn-primary" onclick="submit()">submit
+        </center>
     </div>
 </div>
+ <div>
+<center>
+    <div id="myname" class="form-text"></div>
+    <div id="myemail" class="form-text"></div>
+    <div id="myusername" class="form-text"></div>
+     <div id="mymbno" class="form-text"></div>
+ 
+    <div id="myadd" class="form-text"></div>
+    <div id="myaadhar" class="form-text"></div>
+    <div id="mypan" class="form-text"></div>
+    <div id="mycity" class="form-text"></div>
+    <div id="mystate" class="form-text"></div>
+    <div id="mydob" class="form-text"></div>
+    <div id="myprofile" class="form-text"></div>
 
-
+ 
+    </center>
+ 
+ </div>
 
     </div>
         </body>
-        </html>
+</html>
